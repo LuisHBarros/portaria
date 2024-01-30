@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitição de Abertura de Codigos</title>
+    <link rel="stylesheet" href="req.css">
+    <link rel="icon" type="img/x-icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div id="logo">
+           <h1><a href="">Logo empresa</a></h1> 
+        </div>
+        <h3>Solicitação</h3>
+    </header>
+    <nav>
+        <fieldset>
+            <legend>Informações Do Solicitante</legend>
+            <form action="" id="formSoli">
+                <label for="text">Solicitante</label>
+                <input type="text" name="Nome" id="solicitante" placeholder="Nome" required>
+                
+                <label for="number">Ramal</label>
+                <input type="number" name="ramal" id="ramal" placeholder="Ramal" required>
+            
+                <label for="data">Data</label>
+                <input type="date" id="data" required>
+                <br>
+            </form>
+        
+       </fieldset>
+       <!--navegação-->
+        <ul>
+            <li><a href="//srv-fls/ti$/Projetos/Balan%C3%A7a.portaria/home/index.html">Home</a></li>
+        </ul> 
+        <br>
+       <article>
+        <section>
+            <p>
+                <b>Para solicitação</b> de abertura de códigos de materiais que agregam valor ao equipamento em termo de performance ou vida útil. Durabilidade maior que 12 meses independente do uso.
+            </p>
+            <p>
+                <b>Para Fornecedor Sugerido</b>- anexar orçamentos ao e-mail.
+            </p>
+            <p>
+                <b>Na descrição é necessário informar</b> nome técnico do material, tipo de material, dimensões como diametro, comprimento, largura, espessura, unidade de medida, tipo de rosca, norma construtiva, classe de resistencia, tipo de acabamento,necessidade de certificado de qualidade ou relatório dimensional, marca modelo, se a compra pode ser de um material similar ou exclusivo da marca especificada.  
+            </p>
+        </section>
+       </article>  
+    </nav>
+
+    <!--tabelas-->
+    <div id="tabela">
+        <table id="tabela-dinamica">
+            <tr>
+                <th style="width: 50px">Código</th>
+                <th style="width: 20px">Item</th>
+                <th style="width: 15px">Unid.</th>
+                <th style="width: 200px">Descrição</th>
+                <th style="width: 100px">Utilização do Item</th>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Insira o código"></td>
+                <td><input type="text" placeholder="Insira o número do item"></td>
+                <td><input type="text" placeholder="Insira a unidade"></td>
+                <td><input type="text" placeholder="Insira a descrição"></td>
+                <td><input type="text" placeholder="Insira a utilização"></td>
+            </tr>
+        </table>
+    </div>
+    <!--botão de adicionar mais linhas-->
+    <button onclick="adicionarLinha()" id="botaoLinha">Adicionar linha</button>
+    <!--BOTAO DE ENVIO-->
+    
+    <form action="url_para_envio" method="post">
+        <button type="submit" id="botaoEnvio">Enviar Solicitação</button>
+    </form>
+    <br>
+    <footer>
+        <p>Fundição Moreno 2023</p>
+    </footer>
+    <!--script-->
+    <script>
+        function adicionarLinha() {
+            var table = document.getElementById('tabela-dinamica');
+            var row = table.insertRow(-1);
+    
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = '<input type="text" placeholder="Insira o código">';
+    
+            var cell2 = row.insertCell(1);
+            cell2.innerHTML = '<input type="text" placeholder="Insira o número do item">';
+    
+            var cell3 = row.insertCell(2);
+            cell3.innerHTML = '<input type="text" placeholder="Insira a unidade">';
+    
+            var cell4 = row.insertCell(3);
+            cell4.innerHTML = '<input type="text" placeholder="Insira a descrição">';
+    
+            var cell5 = row.insertCell(4);
+            cell5.innerHTML = '<input type="text" placeholder="Insira a utilização">';
+        }
+    </script>
+</body>
+</html>

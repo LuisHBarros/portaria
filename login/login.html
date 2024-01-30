@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tela de Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            padding: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Nome de Usuário:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Use type="button" em vez de type="submit" e chame a função authenticateUser() -->
+            <button type="button" onclick="authenticateUser()">Entrar</button>
+        </form>
+        <p id="error-message" style="color: red;"></p>
+    </div>
+    <script>
+        // Mapeamento de usuários e senhas
+        var users = {
+            "balanca": "balanca",
+            "portaria": "portaria",
+            // Adicione mais usuários e senhas conforme necessário
+        };
+        function authenticateUser() {
+            // Obtenha os valores do nome de usuário e senha do formulário
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Verifique se as credenciais correspondem
+            if (users.hasOwnProperty(username) && users[username] === password) {
+                // Autenticação bem-sucedida, redirecione o usuário para o site externo
+                window.location.href = "file://srv-fls/ti$/Projetos/Balan%C3%A7a.portaria/home/index.html";
+            } else {
+                // Autenticação falhou, exiba uma mensagem de erro
+                document.getElementById("error-message").textContent = "Credenciais inválidas";
+            }
+        }
+    </script>
+</body>
+</html>

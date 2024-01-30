@@ -1,0 +1,85 @@
+body{
+    width: auto;
+    height: auto;
+}
+
+#logo{
+    width: 1080px;
+    height: 150px;
+    background: url(fundição\ transp.png) no-repeat;
+    text-indent: -9999px;
+}
+
+/*solicitante conf*/
+#solicitante{
+    width: 300px;
+}
+
+#formSoli{
+    padding-top: 20px;
+}
+
+/*tabelas*/
+#tabela {
+    margin-top: 20px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #f2f2f2;
+}
+#botaoLinha, #botaoEnvio {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#botaoEnvio{
+    float: left;
+}
+#botaoLinha{
+    float: right;
+}
+tr td input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0; /* ou border: none; */
+}
+footer {
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 60px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: center;
+}
+
+nav li a {
+    display: block;
+    color: rgb(97, 97, 97);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #f2f2f2;
+}
+
+nav li a:hover {
+    background-color: #b8b5b5;
+}

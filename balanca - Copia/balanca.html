@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="balanca.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Balança</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <script src="balanca.js"></script>
+    <nav id="logo">
+        <div>
+            <img src="logo.png" alt="" class="logo">
+        </div>
+        <div>
+            <h1 class="textbalanca">Sistema Balança</h1>
+            <a href="file://srv-fls/ti$/Projetos/Balan%C3%A7a.portaria/home/index.html" class="pginicial">Pagina Anterior</a>
+            <br>
+            <form action="/search" method="get"> 
+                <input type="text" name="q" placeholder="Pesquisar" id="Pesquisar">
+                <input type="submit" value="Buscar" id="Buscar">
+            </form>
+        </div>
+    </nav>
+    <div >
+        <div id="titulo">
+            <h1>Pesagem</h1>
+        </div>
+            <span class="layout">
+            <div class="forms">
+            <form action="">
+            <label for="fnume">Número:</label>
+                <input type="number" name="fnume" id="link1" class="input-element" data-historico="true">
+            <label for="lempresa">Empresa</label>
+                <input type="number" id="link1" class="input-element" data-historico="true">
+                <select id="selectEmpresa" name="">
+                <option value="Fundição Moreno Ltda">Fundição Moreno Ltda</option>
+                <option value="Moreno Equipamentos Pesados Ltda">Moreno Equipamentos Pesados Ltda</option>
+                <option value="Moreno Participações e Equip.Ind">Moreno Participações e Equip.Ind</option>
+                <option value="Quality Equipamentos Industriais Ltda">Quality Equipamentos Industriais Ltda</option>
+                <option value="Destilaria Sao Jorge Ltda">Destilaria Sao Jorge Ltda</option>
+                </select>
+            <label for="foperador">Operador</label>
+                <select id="selectOperador" name="">
+                <option value="Celso Luiz Das Neves">Celso Luiz Das Neves</option>
+                <option value="Danilo Deganello">Danilo Deganello</option>
+                <option value="Enrico Rossetto Sarni">Enrico Rossetto Sarni</option>
+                <option value="Leonardo Torres">Leonardo Torres</option>
+                <option value="Ruth Santos Figueiredo">Ruth Santos Figueiredo</option>
+                </select><br>
+            <label for="forn/clien">Forn./Cliente</label>
+                <input type="number" id="link1">
+            <select id="selectFornecedor" name=""></select>
+                <input type="text"><br>
+            <label for="motorista">Motorista:</label>
+                <input type="number" id="link1">
+            <select id="selectMotorista" name=""></select>
+                <input type="text">
+            <label for="ident.motorista">Identidade</label>
+                <input type="number" id="link2"><br>
+            <label for="transportadora">Transportadora</label>
+                <select id="selectTransportadora" name=""></select>
+            <label for="Placa.transpor">Placa</label>
+                <input type="text" id="inp1">
+            <label for="cidade">Cidade</label>
+                <input type="text">
+            <label for="Num.NF">N°NF</label>
+                <input type="text" id="inp1"><br>
+            <label for="carga">Carga</label>
+                <input type="number" id="link1">
+                <select id="selectCarga" name=""></select>
+            <label for="quantidade">Qtde</label>
+                <input type="number" id="link1">
+            <label for="OS/It">OS/It</label>
+                <input type="text" id="inp1">
+                <input type="text" id="inp1">
+            <br>
+            <label for="Obs">Observação</label>
+                <textarea name="Observação" placeholder="Digite sua observação" id="obs"></textarea><br>
+            <label for="Cód./Seq.Peça">Cód./Seq.Peça</label>
+                <input type="text" id="inp1" >
+                <input type="text" id="inp1" >
+        </form>
+            </div>
+        </span>
+        <span class="layout">
+        <div class="pesodata">
+        <p>Pesos/Datas</p>
+        <label for="Inicial">Inicial</label>
+            <input type="number" id="link2" >
+            <input type="datetime-local" id="dataHora" name="dataHora" >
+        <label for="Final">Final</label>
+            <input type="number" id="link2" >
+            <input type="datetime-local" id="dataHora" name="dataHora" >
+        <label for="carga">Carga</label>
+            <input type="carga" >
+        </div>
+        </span>
+    </div>
+    <button id="adicionarElemento"> Salvar </button>
+    <div>
+        <footer>
+            <p>Pagina 2023</p>
+            <p>Fundição Moreno</p>
+        </footer>
+    </div>
+
+</body>
+</html>

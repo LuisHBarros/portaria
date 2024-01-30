@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.logo {
+    float: left;
+    width: 150px;
+}
+
+.logo-link {
+    position: absolute;
+    top: 15px;
+    left: 170px;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.button {
+    margin: 10px 0;
+    padding: 10px 8px;
+    background-color: #4caf50;
+    color: #fff;
+    color: #e2e2e2; /* cor do texto */
+    text-shadow:
+        /*-1px -1px 0 #000000, /* contorno superior esquerdo */
+         1px -1px 0 #000000, /* contorno superior direito */
+        /*-1px  1px 0 #000000, /* contorno inferior esquerdo */
+         1px  1px 0 #000000; /* contorno inferior direito */
+        font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 20px;
+    margin-left: 250px;
+    font-size: 14px;
+}
+
+/* Estilos para cada conteúdo */
+
+#content[data-active="entradaFuncionarios"] {
+    /* Estilos para a seção "Entrada de Funcionários" */
+}
+
+#content[data-active="entradaVisitantes"] {
+    /* Estilos para a seção "Entrada de Visitantes" */
+}
+
+#content[data-active="cartaoEspecial"] {
+/* Estilos para a seção "Cartão Especial" */
+}
+
+#content[data-active="funcionariosMoreno"] {
+    /* Estilos para a seção "Funcionários que saem com bens Moreno" */
+}
+
+#content[data-active="cadastroUsuario"] {
+    /* Estilos para a seção "Cadastro de Usuário" */
+}
+
+#content[data-active="botao6"] {
+    /* Estilos para a seção "Botão 6" */
+}
